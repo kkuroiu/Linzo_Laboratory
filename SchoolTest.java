@@ -76,20 +76,13 @@ class Staff extends Person {
 
 class SchoolTest {
     public static void main(String[] args) {
-        // Declare variables
-        String name = "Yan Linzo";
-        int id = 1568;
-        String gradeLevel = "First";
-        String subject = "Programming";
-        String department = "SACE";
-
-        Student student = new Student(name, id, gradeLevel);
+        Student student = new Student("Yan Linzo", 1568, "First");
         student.displayInfo();
 
-        Teacher teacher = new Teacher(name, id, subject);
+        Teacher teacher = new Teacher("Carla Garcia", 0023, "Programming");
         teacher.displayInfo();
 
-        Staff staff = new Staff(name, id, department);
+        Staff staff = new Staff("Nathan Chavez", 0056, "SACE");
         staff.displayInfo();
     }
 }
